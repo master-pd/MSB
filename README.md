@@ -48,10 +48,11 @@ rm -f success_log.txt fail_log.txt
 ### step 3
 ```
 git clone https://github.com/master-pd/MSB.git
+ cd MSB
 ```
 ### step 4
 ```
- cd MSB pkg update -y pkg upgrade -y
+pkg update -y pkg upgrade -y
  pkg install python -y
 pkg install git -y
 pip install --upgrade
