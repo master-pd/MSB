@@ -33,20 +33,32 @@ MSB-BOT হলো **শুধু শিক্ষামূলক ও প্র্
 
 ---
 
-## 📦 INSTALLATION 🔰
+# 📦 INSTALLATION 🔰
 
-# Termux Commands (Copy-Ready)
+## Termux Commands (Copy-Ready)
 নিচের সব কমান্ড একসাথে কপি করে Termux-এ পেস্ট করতে পারবে:
-
+### step 1
 ```
 cd ~ rm -rf MSB
+```
+### step 2
+```
 rm -f success_log.txt fail_log.txt
+```
+### step 3
+```
 git clone https://github.com/master-pd/MSB.git
+```
+### step 4
+```
  cd MSB pkg update -y pkg upgrade -y
  pkg install python -y
 pkg install git -y
 pip install --upgrade
 python-telegram-bot urllib3 requests
+```
+### step 5
+```
 chmod +x main.py
 python main.py
 ```
