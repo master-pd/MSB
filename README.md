@@ -1,17 +1,52 @@
-# Spam-Bot by master-pd
+# 🚀 MSB-BOT 🚀
 
-A simple Python Telegram bot to send random messages from `msg.txt` and predefined messages.
+**Created by:** Md Rana  
+**Address:** Dhaka, Bangladesh  
+**Email:** mdranasheikhe2005@gmail.com  
 
-## Features
-- Send random messages
-- Load messages from one or more files
-- Success and fail logs
-- Simple banner on start
-- Easy to setup with `install.sh`
+---
 
-## Setup (Termux / Linux)
-```bash
-chmod +x install.sh
-./install.sh
-cd Spam-Bot
+## 🛠 Tool Name
+**MSB-BOT** (Mass Telegram Messaging Bot)
+
+---
+
+## 🔹 Purpose / টুলের কাজ
+MSB-BOT হলো **শুধু শিক্ষামূলক ও প্র্যাকটিসের জন্য তৈরি** একটি Telegram Bot।  
+এটি ব্যবহার করে তুমি শিখতে পারবে:  
+
+- Python দিয়ে Telegram Bot API ব্যবহার করা।  
+- Predefined ও file-based messages পাঠানো।  
+- Success / Fail log তৈরি ও দেখতে পারা।  
+
+> ⚠️ **Important:**  
+> কেবল নিজের Telegram চ্যাট বা টেস্ট গ্রুপে ব্যবহার করা উচিত।  
+> অন্য কারো অনুমতি ছাড়া ব্যবহার করলে Telegram-এর নীতি লঙ্ঘন হবে এবং অ্যাকাউন্ট/বট ব্যান হতে পারে।  
+
+---
+
+## ⚡ Features / ফিচার
+- ✅ Predefined messages পাঠানো।  
+- ✅ Optional: File থেকে কাস্টম মেসেজ লোড।  
+- ✅ প্রতি সেকেন্ডে 2টি মেসেজ পাঠানো।  
+- ✅ Success / Fail log ফাইল তৈরি করে হিসাব রাখা।  
+
+---
+
+## 📦 INSTALLATION 🔰
+
+# Termux Commands (Copy-Ready)
+নিচের সব কমান্ড একসাথে কপি করে Termux-এ পেস্ট করতে পারবে:
+
+```
+cd ~ rm -rf MSB
+rm -f success_log.txt fail_log.txt
+git clone https://github.com/master-pd/MSB.git
+ cd MSB pkg update -y pkg upgrade -y
+ pkg install python -y
+pkg install git -y
+pip install --upgrade
+python-telegram-bot urllib3 requests
+chmod +x main.py
 python main.py
+```
